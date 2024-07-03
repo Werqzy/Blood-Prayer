@@ -7,8 +7,41 @@
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: #1a1a1a;
+      color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+    header {
+      background-color: #282828;
+      width: 100%;
+      padding: 20px 0;
       text-align: center;
-      margin-top: 50px;
+      color: #f4f4f4;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+    }
+    .container {
+      background: #333;
+      padding: 40px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 2.5em;
+      color: #f4f4f4;
+    }
+    p {
+      font-size: 1.2em;
+      margin: 20px 0;
     }
     .download-button {
       background-color: #4CAF50;
@@ -17,16 +50,24 @@
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 16px;
-      margin: 20px 2px;
+      font-size: 18px;
+      margin: 20px 0;
       cursor: pointer;
       border-radius: 12px;
+      transition: background-color 0.3s;
+    }
+    .download-button:hover {
+      background-color: #45a049;
     }
   </style>
 </head>
 <body>
-  <h1>Blood's Prayer</h1>
-  <p>Download the latest version of the game below:</p>
-  <a class="download-button" href="https://drive.google.com/file/d/10d4b0-4-_sIJ_cc6boKMqY604h6hvGn7/view?usp=drive_link" download>Download Now</a>
+  <header>
+    <h1>Blood's Prayer</h1>
+  </header>
+  <div class="container">
+    <p>Download the latest version of the game below:</p>
+    <a class="download-button" href="https://drive.google.com/uc?export=download&id=10d4b0-4-_sIJ_cc6boKMqY604h6hvGn7" download>Download Now</a>
+  </div>
 </body>
 </html>
